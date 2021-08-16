@@ -1,0 +1,298 @@
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    background-color: #fff;
+}
+
+/* хэдр */
+
+.navbar-brand{
+    font-size: 26px;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+.nav-link{
+    font-size: 18px;
+} 
+.top_header_text {
+    font-size: 18px;
+    opacity: 0.7;
+}
+.navbar-header >div, .navbar-header >a {
+    white-space: nowrap;
+}
+svg path, .navbar-header > div {
+    transition: background ease 0.5s;
+}
+.logo{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+.header .nav-item{
+    margin-right: 5px;
+}
+/* хэдр конец */
+
+/* футер */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: white;
+    display: block;
+    width: 100%;
+    background-color: #333333;
+    padding: 40px 0;
+}
+footer .navbar-brand{
+ 
+    margin-right: 0px;
+    color: white;
+}
+/* футер конец */
+
+/* первый блок с РЕЙСАМИ */
+.raises-table{
+    padding-top: 50px;
+    Padding-bottom: 50px;
+   background: linear-gradient(0deg, #FAFAFA, #FAFAFA), #FFFFFF;
+}
+.raises-table header, .raises-table main{ 
+    padding: 15px 10px 10px 10px;
+}
+.raises-table main{
+    background: #1B1B22;
+    min-height: 350px;
+}
+.raises-table header a{
+    color: hsla(0,0%,100%,.7);
+}
+.raises-table {
+    color: white;
+}
+#grid{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 2fr ; 
+    grid-gap: 0.5vw;
+}
+
+#grid > div{
+ 
+    padding: .5em;
+    opacity: 50%;
+    text-align: start;
+    border-right: thin solid white;
+}
+#gridelems{
+    display: grid; 
+    grid-template-columns: 2fr 3fr 1fr 1fr 1fr 2fr; 
+    grid-gap: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+#gridelems> div{
+    padding: 10px 10px;
+    background: #343a40;
+    /*background: repeating-linear-gradient(45deg, black, transparent 100px);
+  */
+}
+.upperblock{
+    padding-bottom: 10px;
+}
+.upperblock .filter li{
+    border: thin solid rgba(225,225,225, .2);
+    margin-right: 8px;
+    font-size: 15px;
+}
+.active_btn a{
+    color: #fff !important;
+    text-decoration: underline;
+}
+.mainbuttons li a {
+    color: rgba(225,225,225, .9) ;
+}
+
+/* конец блока с РЕЙСАМИ */
+
+/* второй блок */
+.desc{
+    margin-bottom: 50px;
+}
+/* второй блок */
+
+/* СТРАНИЦА О КОМПАНИИ */
+
+#signin{
+    border-radius: 10%;
+    background: #13aff0;
+    height: 42px;
+}
+#signin:hover{
+    background: #06a4e6;
+}
+#signin a{
+    color:white !important;
+    font-weight: bold;
+    font-size: 17px;
+}
+#signup{
+    border-radius: 10%;
+}
+#signup a{
+    color:white !important;
+    font-weight: bold;
+    font-size: 17px;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url("https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone/strategy-guide/pro-tips/04-tips/TIP-04C-IN-GAME-MODES-BR-002.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#hero:before{
+    content: "";
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#hero .container{
+    position: relative;
+    padding-top: 200px;
+}
+#hero .icons{
+    margin-top: 150px;
+    width: 100%;
+    position: absolute;
+}
+#hero h2{
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+}
+#hero h3{
+    color: white !important;
+    opacity: 60%;
+    font-size: 24px;
+    margin-top: 18px;
+}
+#hero .icon-box h4 a{
+    color: white;
+    text-decoration: none;
+}
+.icon-box{
+    padding: 30px 20px;
+    border: 1px solid gray;
+    text-align: center;
+}
+.icon-box:hover{
+    border-color:white;
+    color: white;
+}
+.dropdown p:focus, .dropdown p:hover{
+    background: transparent;
+}
+
+h3{
+    color: #343a40 !important;
+}
+.regSuccess a{
+    color:white !important;
+    font-weight: bold;
+    font-size: 17px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* СТРАНИЦА О КОМПАНИИ КОНЕЦ */
+
+/* Аккордион */
+.accordion-button{
+	border: 1px solid #E5E5E5;
+	border-radius: 4px;
+	background: #FFFFFF;
+	padding: 33px 40px;
+}
+.accordion-button:hover{
+	box-shadow: 0px 10px 25px rgba(102, 100, 100, 0.1);
+	border-color: #FAFAFA;
+	background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FAFAFA;
+}
+.accordion-button:not(.collapsed) {
+	background: #FFFFFF;
+	box-shadow: none;
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
+}
+.poiner{
+	visibility: hidden;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.accordion-button::after {
+	background-image: url("public/assets/image/elems/pluses.svg");
+	background-size: 75%; 
+	background-position: center, center;
+}
+.accordion-button:not(.collapsed) .poiner{
+	visibility: visible;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("public/assets/image/elems/pluses.svg");
+	background-size: 75%; 
+	background-position: center, center;
+	transform: rotate(45deg);
+}
+/* Аккордион конец */
+
+/* Адаптив */
+@media screen and (max-width: 425px) {
+    .top_header_text{
+        display: none;
+    }
+    .navbar-nav{
+        margin-top: 10px;
+    }
+    .nav-link{
+        text-align: center;
+    }
+    .raises-table .container{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .non_mobile{
+        display: none;
+    }
+    #gridelems{
+        grid-template-columns: 2fr 3fr 2fr 2fr;
+    }
+    #grid {
+        grid-template-columns: 2fr 3fr 2fr 2fr;
+    }
+    .raises-table {
+        padding-top: 0px;
+        Padding-bottom: 0px;
+    }
+    .raises-table .row{
+        --bs-gutter-x: 0;
+    }
+    #hero h2{
+        font-size: 40px;
+    }
+    #hero .icons{
+        margin-top: 20px;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+  }
+
+/* Адаптив конец*/
+
